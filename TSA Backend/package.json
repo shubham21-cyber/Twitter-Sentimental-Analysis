@@ -1,0 +1,44 @@
+{
+  "name": "node-login",
+  "version": "1.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:braitsch/node-login.git"
+  },
+  "dependencies": {
+    "Sentimental": "0.0.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.14.1",
+    "config": "^3.3.6",
+    "connect-mongo": "0.8.2",
+    "cookie-parser": "1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "emailjs": "^1.0.4",
+    "errorhandler": "1.4.2",
+    "express": "^4.17.1",
+    "express-session": "1.11.3",
+    "jade": "1.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "2.10.3",
+    "mongodb": "2.0.45",
+    "mongoose": "^5.12.0",
+    "pug": "^2.0.0-beta6",
+    "stylus": "0.52.4",
+    "twit": "~1.1.12",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "engines": {
+    "node": "4.2.1"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
